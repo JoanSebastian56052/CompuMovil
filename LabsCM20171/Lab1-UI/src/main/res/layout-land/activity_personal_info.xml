@@ -133,7 +133,7 @@
             android:layout_marginLeft="21dp"/>
 
         <TextView
-            android:id="@+id/tvFechaNaci"
+            android:id="@+id/txtDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fechaNacimiento"

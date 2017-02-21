@@ -24,6 +24,7 @@ public class DatePickerFragment extends DialogFragment
         return dialogoFecha;
     }
 
+
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         ((DatePickerDialog.OnDateSetListener)getActivity()).onDateSet(view,year,month,dayOfMonth);
