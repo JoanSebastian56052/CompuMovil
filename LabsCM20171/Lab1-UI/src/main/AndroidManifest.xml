@@ -8,15 +8,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PersonalInfo">
+        <activity android:name=".activity.PersonalInfo"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/activityName1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContactInfo" />
-        <activity android:name=".OtherInfo"></activity>
+        <activity android:name=".activity.ContactInfo"
+            android:label="Informacion de Contacto"/>
+        <activity android:name=".activity.OtherInfo"
+            android:label="@string/activityName3"
+            android:windowSoftInputMode="adjustPan"></activity>
     </application>
 
 </manifest>
