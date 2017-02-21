@@ -8,13 +8,6 @@ import android.widget.DatePicker;
 
 import java.util.Calendar;
 
-/**
- * Esta clase Representa el cuadro de dialogo de selección
- * de fecha.
- * @author Cristian Camilo Isaza
- * @email  sisaza@gmail.com
- * @date 15/02/2017
- */
 public class DatePickerFragment extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {
 
@@ -31,15 +24,6 @@ public class DatePickerFragment extends DialogFragment
         return dialogoFecha;
     }
 
-    /**
-     * Este método es activado justo después de haber seleccionado una
-     * fecha del cuadro de dialogo y está encargado de llamar el Listener
-     * OnDateSet de la actividad que solicito el cuadro de dialogo.
-     * @param view la actividad actual.
-     * @param year Año seleccionado.
-     * @param month Mes seleccionado.
-     * @param dayOfMonth Día seleccionado.
-     */
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         ((DatePickerDialog.OnDateSetListener)getActivity()).onDateSet(view,year,month,dayOfMonth);

@@ -1,34 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LabsCM20171</string>
-    <string name="nameButtom">Siguiente</string>
-    <string name="activityName1">Informacion Personal</string>
-    <string name="activityName2">Informacion de Contacto</string>
-    <string name="activityName3">Informacion Complementaria</string>
-    <string name="change">Cambiar</string>
-    <string name="name">Nombre</string>
-    <string name="nombre">Nombres</string>
-    <string name="apellido">Apellidos</string>
-    <string name="sexo">Sexo:</string>
-    <string name="femenino">Femenino</string>
-    <string name="masculino">Masculino</string>
-    <string name="fechaNacimiento">Fecha de Nacimiento</string>
+    <string name="nameButtom">Next</string>
+    <string name="activityName1">Personal Information</string>
+    <string name="activityName2">Contact Information</string>
+    <string name="activityName3">Information Extra</string>
+    <string name="name">Name</string>
+    <string name="apellido">Lastname</string>
+    <string name="sexo">Gender</string>
+    <string name="femenino">Female</string>
+    <string name="masculino">Male</string>
+    <string name="fechaNacimiento">Birthdate</string>
 
-    <string name="pais">País</string>
-    <string name="ciudad">Ciudad</string>
-    <string name="telefono">Teléfono</string>
-    <string name="direccion">Dirección</string>
+    <string name="pais">Country</string>
+    <string name="ciudad">City</string>
+    <string name="telefono">Phone</string>
+    <string name="direccion">Address</string>
     <string name="email">E-mail</string>
 
-    <string name="mostrar">Mostrar</string>
-    <string name="hobbies">Pasatiempos</string>
-    <string name="gradesSchool">Grados de Escolaridad</string>
-    <string name="birthDay">Fecha de Nacimiento</string>
-    <string name="pick_date">Cambiar</string>
-    <string name="read">Leer</string>
-    <string name="watchTV">Ver TV</string>
-    <string name="dance">Bailar</string>
-    <string name="sing">Cantar</string>
-    <string name="swim">Nadar</string>
+    <string name="mostrar">Show</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="gradesSchool">School Grade</string>
+    <string name="pick_date">Change</string>
+    <string name="read">Read</string>
+    <string name="watchTV">Watch TV</string>
+    <string name="dance">Dance</string>
+    <string name="sing">Sing</string>
+    <string name="swim">Swim</string>
 
     <string-array name="countries_array">
         <item>Argentina</item>
@@ -79,13 +77,13 @@
         <item>Manizales</item>
         <item>Montería</item>
         <item>Neiva</item>
-        <item>Otro...</item>
+        <item>Other...</item>
     </string-array>
     <string-array name="gradeSchool_array">
         <item>Grados de Escolaridad</item>
-        <item>Primaria</item>
-        <item>Secundaria</item>
-        <item>Universidad</item>
-        <item>Otro</item>
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>University</item>
+        <item>Other</item>
     </string-array>
 </resources>
