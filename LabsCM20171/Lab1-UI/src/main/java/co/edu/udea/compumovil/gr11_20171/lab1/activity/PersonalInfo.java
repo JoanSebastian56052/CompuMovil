@@ -28,6 +28,8 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
     Spinner sprGradoEscolaridad;
     Date fechaNaci;
     TextView fecha;
+    RadioButton rbChecked;
+
 
 
     @Override
@@ -42,6 +44,7 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
         sprGradoEscolaridad.setPrompt("Siguiente");
         sprGradoEscolaridad.setSelection(-1);
         fecha = (TextView) findViewById(R.id.txtDate);
+
     }
 
     public void showDatePicker(View view) {
@@ -50,12 +53,13 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
     }
 
     public void showNextActivity(View view) {
+        if (validarCampos()) {
         Bundle datos = new Bundle();
 
         datos.putString("Nombres", input_nombres.getText().toString());
         datos.putString("Apellidos", input_apellidos.getText().toString());
 
-        RadioButton rbChecked = (RadioButton) findViewById(rgSexo.getCheckedRadioButtonId());
+        rbChecked = (RadioButton) findViewById(rgSexo.getCheckedRadioButtonId());
         datos.putString("Sexo", rbChecked.getText().toString());
         datos.putString("FechaNaci", fechaNaci.toString());
         datos.putString("Grado", sprGradoEscolaridad.getSelectedItem().toString());
@@ -64,7 +68,7 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
         otherInfo.putExtra("datos", datos);
         startActivity(otherInfo);
     }
-
+    }
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -72,4 +76,26 @@ public class PersonalInfo extends AppCompatActivity implements DatePickerDialog.
         fecha.setText(dayOfMonth+"/"+month+"/"+year);
     }
 
+
+
+
+    private boolean validarCampos() {
+        if(input_nombres.getText().length()==0){
+            input_nombres.setError("Coloca un nombre valido");
+            return false;
+        }
+        if(input_apellidos.getText().length() == 0) {
+            input_apellidos.setError("Coloca un apellido valido");
+            return  false;
+        }
+        if (rbChecked.getText().length() == 0) {
+            rbChecked.setError("Seleccione un genero");
+            return false;
+        }
+        if (fecha.getText().length() == 0) {
+            fecha.setError("Seleccione una fecha");
+            return false;
+            }
+        return true;
+    }
 }
