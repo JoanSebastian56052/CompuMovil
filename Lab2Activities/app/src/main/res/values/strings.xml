@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab2Activities</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="signIn">Ingresar</string>
+    <string name="signUp">Registrarse</string>
+</resources>
